@@ -20,3 +20,26 @@ body {
 h1, h2, h3 {
   font-family: var(--font-heading);
 }
+
+.language-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--periwinkle);
+}
+
+.language-buttons { display: flex; gap: 1rem; }
+
+.language-buttons button {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  padding: 0.7rem 1.8rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--tangerine);
+  color: white;
+  cursor: pointer;
+}

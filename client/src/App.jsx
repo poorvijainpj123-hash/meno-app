@@ -1,19 +1,17 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import LanguageScreen from './LanguageScreen'
 
 function App() {
-  const [status, setStatus] = useState('checking...')
+  const [language, setLanguage] = useState(null)
 
-  useEffect(() => {
-    fetch('/api/health')
-      .then(res => res.json())
-      .then(data => setStatus(data.status))
-      .catch(() => setStatus('server not reachable'))
-  }, [])
+  if (!language) {
+    return <LanguageScreen onPick={setLanguage} />
+  }
 
   return (
     <div>
       <h1>meno.app</h1>
-      <p>Server: {status}</p>
+      <p>Language chosen: {language}</p>
     </div>
   )
 }
