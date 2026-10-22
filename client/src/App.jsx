@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import LanguageScreen from './LanguageScreen'
+import Quiz from './Quiz'
 
 function App() {
   const [language, setLanguage] = useState(null)
@@ -8,12 +9,6 @@ function App() {
     return <LanguageScreen onPick={setLanguage} />
   }
 
-  return (
-    <div>
-      <h1>meno.app</h1>
-      <p>Language chosen: {language}</p>
-    </div>
-  )
+  return <Quiz language={language} />
 }
-
 export default App

@@ -43,3 +43,56 @@ h1, h2, h3 {
   color: white;
   cursor: pointer;
 }
+
+.quiz {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.bubble {
+  background: var(--periwinkle);
+  padding: 1rem 1.2rem;
+  border-radius: 1.2rem 1.2rem 1.2rem 0.3rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.chips { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.chips button {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  text-align: left;
+  padding: 0.8rem 1.1rem;
+  border: 2px solid var(--indigo);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--indigo);
+  cursor: pointer;
+}
+
+.chips button:hover { background: var(--tangerine); border-color: var(--tangerine); color: white; }
+.progress {
+  height: 6px;
+  background: var(--periwinkle);
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  background: var(--tangerine);
+  transition: width 0.3s;
+}
+
+.back {
+  background: none;
+  border: none;
+  color: var(--indigo);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
